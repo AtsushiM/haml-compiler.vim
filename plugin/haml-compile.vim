@@ -33,7 +33,6 @@ function! s:SetAutoCmd(files)
         endfor
     endif
     unlet file
-    unlet s:SetAutoCmd
 endfunction
 au VimEnter * call s:SetAutoCmd(g:haml_compile_file)
 
